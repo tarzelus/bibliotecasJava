@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 public class Files {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
-		String nombrefichero;
+		String nombrefichero = "";
 		String ruta ="";
 		String nombrecarpeta;
 		
@@ -87,8 +87,18 @@ public class Files {
 		{
            		 System.out.println(e.getMessage());
         	}
+		//------------------para leer lo escrito en el fichero--------------------------------
+		
+		String salida;
 
-
+		File archivo = new File(ruta, "");
+		FileReader leer = new FileReader (archivo);
+		BufferedReader bf = new BufferedReader(leer);
+		while ((salida = bf.readLine())!=null) {
+   		System.out.println(salida);
+		}
+		
+		
 	
 	}
 }
