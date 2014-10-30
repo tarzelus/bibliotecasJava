@@ -13,7 +13,7 @@ public class Main {
 	
 		Random rndm = new Random ();
 		
-		num1=rndm.setSeed(99); //rndm.nextInt(100);	
+		rndm.nextInt(100);	
 		
 		
 		System.out.print("\n el numero creado aleatoriamente:  "+ num1  + "  ");
