@@ -1,0 +1,81 @@
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.*;
+
+public class Array
+{
+	public static void main (String[] args)
+	{
+		// Declaramos la variable numeros como array, la cual tendrá 12 posiciones en memoria (0-11)
+		
+		Scanner sc = new Scanner(System.in);
+		
+	
+		System.out.print("\n Introduce el espacio que quieras que ocupe el array");
+		int z;
+		z = sc.nextInt();	
+		Random rndm = new Random ();
+
+		int[] numeros = new int[z];	
+		System.out.print("\n el array tiene "+ z +" espacios");
+		
+
+		// Damos valor a cada espacio de memoria, exceptuando la última posición
+
+				
+
+		for (int i = 0 ; i < z; i++)
+ 		{
+		
+		numeros[i] = rndm.nextInt(100);
+		}
+
+		for (int h = 0; h < numeros.length; h++)
+		{ 
+			System.out.print(" \n ");
+			System.out.print(h +"-->"+ numeros[h] + "     "); 
+		}
+		 
+		System.out.println("");
+
+
+		
+		
+		System.out.print("\n Introduce un número del array que quieras cambiar");
+		System.out.print("\n");
+		int cambiar = sc.nextInt();
+		System.out.print("\n por que numero lo quieres cambiar?\n");	
+		numeros[cambiar] = sc.nextInt();
+
+		
+
+		
+		// numeros.length --> Longitud del array (12)
+		for (int e = 0; e < numeros.length; e++)
+		{ 	
+			System.out.print("\n"); 
+			System.out.print(e +"-->"+ numeros[e] + "  \n   "); 
+		} 
+
+
+		// Ordenacion del los numeros del array
+		Arrays.sort(numeros);
+		//Arrays.sort(numeros, Collections.reverseOrder());
+
+		System.out.println("\n Numeros ordenados");
+
+		// numeros.length --> Longitud del array (12)
+		for (int i = 0; i < numeros.length; i++)
+		{ 	
+			System.out.print(" \n ");
+			System.out.print(i +"-->"+ numeros[i] + "     "); 
+		}
+
+		System.out.println("");
+
+		
+
+	} 
+
+
+}
