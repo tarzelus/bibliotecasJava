@@ -1,0 +1,26 @@
+
+public class Matematicas{
+	 
+	     public static void main(String[] args) {	
+
+        
+
+
+System.out.println("--> para calcular el valor absoluto de dos numeros escribe 'absoluto' \n ");
+	       		String hacer = next();
+
+
+       if (equalsIgnoreCase(hacer "absoluto")) {
+			System.out.println("mete el valor que quieras darle a x:\n ");
+		 	int x = nextInt();
+			System.out.println("mete el valor que quieras darle a y: \n");
+       		 	int y = nextInt();
+
+			
+    			System.out.println("Valor absoluto de "+ x + " es=" + Math.abs(x));
+     			System.out.println("Valor absoluto de "+ y + " es="  + Math.abs(y));				
+		
+                          }
+     
+}
+}
